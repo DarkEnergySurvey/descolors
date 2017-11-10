@@ -18,4 +18,10 @@ pip install descolors
 
 See the example in [`des_colors.ipynb`](examples/des_colors.ipynb).
 
+```
+from descolors import BAND_COLORS
+for name,color in BAND_COLORS.items():
+    print("%s : %s"%(name,color)
+```
+
 ![DES band colors](examples/des_band_colors.png)
