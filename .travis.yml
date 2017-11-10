@@ -18,7 +18,7 @@ before_script:
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda config --set always_yes yes --set changeps1 no
-  - conda create -q -n travis-env notebook;
+  - conda create -q -n travis-env notebook matplotlib;
   - source activate travis-env
 
 # command to run tests
@@ -26,5 +26,5 @@ script:
   - if [[ $TRAVIS_PYTHON_VERSION < 3.0 ]]; then
       nosetests ;
     else 
-      nosetests -I test_notebook.py ;
+      nosetests -I test_notebooks.py ;
     fi
