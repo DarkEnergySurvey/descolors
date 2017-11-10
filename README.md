@@ -7,8 +7,6 @@
 
 Standard color scheme for DES.
 
-![DES band colors](examples/des_band_colors.png)
-
 # Installation
 
 The easiest way to install is with `pip`:
@@ -19,3 +17,5 @@ pip install descolors
 # Usage
 
 See the example in [`des_colors.ipynb`](examples/des_colors.ipynb).
+
+![DES band colors](examples/des_band_colors.png)
