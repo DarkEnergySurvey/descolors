@@ -5,7 +5,7 @@
 [![Release](https://img.shields.io/github/release/kadrlica/descolors.svg)](../../releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](../../)
 
-Standard color scheme for plotting DES/DECam filters.
+Standard color scheme for DES.
 
 # Installation
 
