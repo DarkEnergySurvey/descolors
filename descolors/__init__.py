@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Generic python script.
+DES color standards.
 """
 __author__ = "Alex Drlica-Wagner"
 
@@ -9,9 +9,9 @@ from ._version import get_versions
 __version__ = get_versions()['version']
 del get_versions
 
-__all__ = ['DES_BAND_COLORS']
+__all__ = ['BAND_COLORS']
 
-DES_BAND_COLORS = odict([
+BAND_COLORS = odict([
     ('u','#56b4e9'),
     ('g','#008060'),
     ('r','#ff4000'),
