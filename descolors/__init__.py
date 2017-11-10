@@ -5,6 +5,9 @@ Generic python script.
 __author__ = "Alex Drlica-Wagner"
 
 from collections import OrderedDict as odict
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions
 
 __all__ = ['DES_BAND_COLORS']
 
