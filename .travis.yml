@@ -9,17 +9,15 @@ sudo: false
 notifications:
   email: false
  
-# Setup dependencies and install package
+# These dependencies are really only for testing
 install:
-  - python setup.py install
-
-before_script:
   - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
   - bash miniconda.sh -b -p $HOME/miniconda
   - export PATH="$HOME/miniconda/bin:$PATH"
   - conda config --set always_yes yes --set changeps1 no
-  - conda create -q -n travis-env notebook nbformat matplotlib;
+  - conda create -q -n travis-env notebook nbformat matplotlib
   - source activate travis-env
+  - python setup.py install
 
 # command to run tests
 script: 
