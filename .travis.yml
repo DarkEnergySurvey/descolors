@@ -1,0 +1,30 @@
+language: python
+
+python:
+  - "2.7"
+  - "3.5"
+
+sudo: false
+
+notifications:
+  email: false
+ 
+# Setup dependencies and install package
+install:
+  - python setup.py install
+
+before_script:
+  - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - conda config --set always_yes yes --set changeps1 no
+  - conda create -q -n travis-env notebook;
+  - source activate travis-env
+
+# command to run tests
+script: 
+  - if [[ $TRAVIS_PYTHON_VERSION < 3.0 ]]; then
+      nosetests ;
+    else 
+      nosetests -I test_notebook.py ;
+    fi
