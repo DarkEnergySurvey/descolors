@@ -4,7 +4,7 @@ try: from setuptools import setup
 except ImportError: from distutils.core import setup
 import versioneer
 
-URL = 'https://github.com/kadrlica/descolors'
+URL = 'https://github.com/DarkEnergySurvey/descolors'
 
 setup(
     name='descolors',
