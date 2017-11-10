@@ -16,10 +16,4 @@ pip install descolors
 
 # Usage
 
-An example usage is
-```
-from descolors import BAND_COLORS
-
-for k,v in BAND_COLORS.items():
-    print('band = %s : color = %s'%(k,v))
-```
+See the example in [`des_colors.ipynb`](examples/des_colors.ipynb).
