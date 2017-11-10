@@ -1,8 +1,8 @@
 # DES Colors
 
-[![Build](https://img.shields.io/travis/kadrlica/descolors.svg)](https://travis-ci.org/kadrlica/descolors)
+[![Build](https://img.shields.io/travis/DarkEnergySurvey/descolors.svg)](https://travis-ci.org/DarkEnergySurvey/descolors)
 [![PyPI](https://img.shields.io/pypi/v/descolors.svg)](https://pypi.python.org/pypi/descolors)
-[![Release](https://img.shields.io/github/release/kadrlica/descolors.svg)](../../releases)
+[![Release](https://img.shields.io/github/release/DarkEnergySurvey/descolors.svg)](../../releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](../../)
 
 Standard color scheme for DES.
