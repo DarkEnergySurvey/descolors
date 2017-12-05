@@ -21,7 +21,7 @@ See the example in [`des_colors.ipynb`](examples/des_colors.ipynb).
 ```
 from descolors import BAND_COLORS
 for name,color in BAND_COLORS.items():
-    print("%s : %s"%(name,color)
+    print("%s : %s"%(name,color))
 ```
 
 Below is a visual representation of the standard pallet for the DES filter bands. The panel on the left shows the appearance for trichromatic individuals, while the right approximates the appearance for individuals who are protanopic (red-green color blind).
